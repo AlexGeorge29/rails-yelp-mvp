@@ -1,0 +1,14 @@
+<div class="container">
+  <div class= "row">
+    <div class= "col-xs-4 col-xs-offset-4">
+      <h1><%=@restaurant.name %></h1>
+        <p><strong>Adress: </strong><%=@restaurant.address%></p>
+        <p><strong>Phone: </strong><%=@restaurant.phone_number%></p>
+        <p><strong>Category: </strong><%=@restaurant.category%></p>
+    </div>
+  </div>
+  <div class= "row">
+    <div class= "col-xs-4 col-xs-offset-4">
+      <%= link_to "GO back to the list of restaurant", restaurants_path%>
+    </div>
+  </div>
