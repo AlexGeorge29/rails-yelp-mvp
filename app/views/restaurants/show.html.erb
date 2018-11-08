@@ -12,3 +12,14 @@
       <%= link_to "GO back to the list of restaurant", restaurants_path%>
     </div>
   </div>
+  <div class= "row">
+    <div class= "col-xs-4 col-xs-offset-4">
+      <%= link_to "Leave a review!", new_restaurant_review_path(@restaurant) %>
+    </div>
+  </div>
+
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+    <li><%= review.content %></li>
+  <% end %>
+</ul>
